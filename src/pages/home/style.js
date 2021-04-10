@@ -1,6 +1,28 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  // image slide our services
+  root: {
+    Width: "100%",
+    flexGrow: 1,
+  },
+  header: {
+    display: "flex",
+    alignItems: "center",
+    height: 50,
+    paddingLeft: theme.spacing(4),
+    backgroundColor: theme.palette.background.default,
+  },
+  img: {
+    minheight: 500,
+    maxHeight: 400,
+    height: "100%",
+    display: "block",
+    width: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+
   lineHero: {
     backgroundColor: "#011327",
     color: "white",
