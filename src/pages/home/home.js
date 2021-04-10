@@ -11,9 +11,9 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
-import Container from "@material-ui/core/Container";
 import { useStyles } from "./style.js";
-import port1 from "../../assets/images/port1.jpg";
+import jam from "../../assets/images/jam.PNG";
+import Bodega from "../../assets/images/Bodega.png";
 
 function Home(props) {
   const classes = useStyles(props);
@@ -83,26 +83,26 @@ function Home(props) {
               <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
-                height="200"
-                image={port1}
+                style={{ height: "100%", maxHeight: "250px" }}
+                image={Bodega}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Bodega
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                <Typography
+                  variant="subtitle1"
+                  color="textSecondary"
+                  component="p"
+                >
+                  Bodega is mobile showcase website design by creative website.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" color="primary">
-                Learn More
+              <Button variant="outlined" color="primary">
+                Live Demo
               </Button>
             </CardActions>
           </Card>
@@ -113,26 +113,27 @@ function Home(props) {
               <CardMedia
                 component="img"
                 alt="Contemplative Reptile"
-                height="200"
-                image={port1}
+                image={jam}
+                style={{ height: "100%", maxHeight: "250px" }}
                 title="Contemplative Reptile"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Jamelati
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                <Typography
+                  variant="subtitle1"
+                  color="textSecondary"
+                  component="p"
+                >
+                  Jamelati is website design for showcase of cosmatic services
+                  provided by the Jamelati.
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" color="primary">
-                Learn More
+              <Button variant="outlined" color="primary">
+                Live Demo
               </Button>
             </CardActions>
           </Card>
