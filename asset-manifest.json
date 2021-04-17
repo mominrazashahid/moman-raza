@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/moman-raza/static/css/main.289f5cdc.chunk.css",
+    "main.js": "/moman-raza/static/js/main.6b580f59.chunk.js",
+    "main.js.map": "/moman-raza/static/js/main.6b580f59.chunk.js.map",
+    "runtime-main.js": "/moman-raza/static/js/runtime-main.2512d422.js",
+    "runtime-main.js.map": "/moman-raza/static/js/runtime-main.2512d422.js.map",
+    "static/js/2.621f9d77.chunk.js": "/moman-raza/static/js/2.621f9d77.chunk.js",
+    "static/js/2.621f9d77.chunk.js.map": "/moman-raza/static/js/2.621f9d77.chunk.js.map",
+    "static/js/3.0a266d02.chunk.js": "/moman-raza/static/js/3.0a266d02.chunk.js",
+    "static/js/3.0a266d02.chunk.js.map": "/moman-raza/static/js/3.0a266d02.chunk.js.map",
+    "index.html": "/moman-raza/index.html",
+    "static/css/main.289f5cdc.chunk.css.map": "/moman-raza/static/css/main.289f5cdc.chunk.css.map",
+    "static/js/2.621f9d77.chunk.js.LICENSE.txt": "/moman-raza/static/js/2.621f9d77.chunk.js.LICENSE.txt",
+    "static/media/Bodega.e7102ca4.png": "/moman-raza/static/media/Bodega.e7102ca4.png",
+    "static/media/design.ff109437.jpg": "/moman-raza/static/media/design.ff109437.jpg",
+    "static/media/jam.651b2373.PNG": "/moman-raza/static/media/jam.651b2373.PNG",
+    "static/media/mobile.d7c7020b.jpg": "/moman-raza/static/media/mobile.d7c7020b.jpg",
+    "static/media/pre-ligal.e57b8252.PNG": "/moman-raza/static/media/pre-ligal.e57b8252.PNG",
+    "static/media/sundry.7f88bfb0.PNG": "/moman-raza/static/media/sundry.7f88bfb0.PNG",
+    "static/media/web.023cbfc2.jpg": "/moman-raza/static/media/web.023cbfc2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2512d422.js",
+    "static/js/2.621f9d77.chunk.js",
+    "static/css/main.289f5cdc.chunk.css",
+    "static/js/main.6b580f59.chunk.js"
+  ]
+}
