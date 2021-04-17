@@ -12,43 +12,23 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
-import SwipeableViews from "react-swipeable-views";
-import { autoPlay } from "react-swipeable-views-utils";
+
 import { useStyles } from "./style.js";
 import jam from "../../assets/images/jam.PNG";
 import Bodega from "../../assets/images/Bodega.png";
 import Sundry from "../../assets/images/sundry.PNG";
 import legal from "../../assets/images/pre-ligal.PNG";
 import mobDevelopment from "../../assets/images/mobile.jpg";
-import testing from "../../assets/images/testing.jpg";
-import wordpress from "../../assets/images/wordpress.jpg";
+import design from "../../assets/images/design.jpg";
 import webDevelopment from "../../assets/images/web.jpg";
 import CardHeader from "@material-ui/core/CardHeader";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Box from "@material-ui/core/Box";
 
 import CheckIcon from "@material-ui/icons/Check";
-const tutorialSteps = [
-  {
-    label: "Website Development",
-    imgPath: webDevelopment,
-  },
-  {
-    label: "Software Testing",
-    imgPath: testing,
-  },
-  {
-    label: "Wordpress theme customization",
-    imgPath: wordpress,
-  },
-  {
-    label: "Mobile App  Development",
-    imgPath: mobDevelopment,
-  },
-];
+
 function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
 }
@@ -58,7 +38,6 @@ function Home(props) {
   const theme = useTheme();
 
   const [activeStep, setActiveStep] = React.useState(0);
-  const maxSteps = tutorialSteps.length;
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -311,12 +290,12 @@ function Home(props) {
           <Card className={classes.card_root}>
             <CardHeader
               style={{ textAlign: "center" }}
-              title="Mobile Development"
+              title="Graphic Designing"
             />
             <div style={{ width: "100%", height: "400px" }}>
               <CardMedia
                 className={classes.media}
-                image={webDevelopment}
+                image={design}
                 title="Paella dish"
               />
             </div>
@@ -356,12 +335,12 @@ function Home(props) {
           <Card className={classes.card_root}>
             <CardHeader
               style={{ textAlign: "center" }}
-              title="Graphic Designing"
+              title="Mobile Development"
             />
             <div style={{ width: "100%", height: "400px" }}>
               <CardMedia
                 className={classes.media}
-                image={webDevelopment}
+                image={mobDevelopment}
                 title="Paella dish"
               />
             </div>
