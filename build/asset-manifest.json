@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/moman-raza/static/css/main.289f5cdc.chunk.css",
-    "main.js": "/moman-raza/static/js/main.6b580f59.chunk.js",
-    "main.js.map": "/moman-raza/static/js/main.6b580f59.chunk.js.map",
+    "main.js": "/moman-raza/static/js/main.d299f2f6.chunk.js",
+    "main.js.map": "/moman-raza/static/js/main.d299f2f6.chunk.js.map",
     "runtime-main.js": "/moman-raza/static/js/runtime-main.2512d422.js",
     "runtime-main.js.map": "/moman-raza/static/js/runtime-main.2512d422.js.map",
     "static/js/2.621f9d77.chunk.js": "/moman-raza/static/js/2.621f9d77.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.2512d422.js",
     "static/js/2.621f9d77.chunk.js",
     "static/css/main.289f5cdc.chunk.css",
-    "static/js/main.6b580f59.chunk.js"
+    "static/js/main.d299f2f6.chunk.js"
   ]
 }

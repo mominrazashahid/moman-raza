@@ -19,9 +19,9 @@ function Routes() {
         
         <PublicRouteWithLayout
           component={Home}
-          exact
           layout={MainWithSidebar}
           path="/"
+         // basename="/moman-raza/"
         />
 
             </Switch>
