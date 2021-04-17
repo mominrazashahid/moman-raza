@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/moman-raza/static/css/main.289f5cdc.chunk.css",
-    "main.js": "/moman-raza/static/js/main.d299f2f6.chunk.js",
-    "main.js.map": "/moman-raza/static/js/main.d299f2f6.chunk.js.map",
-    "runtime-main.js": "/moman-raza/static/js/runtime-main.2512d422.js",
-    "runtime-main.js.map": "/moman-raza/static/js/runtime-main.2512d422.js.map",
-    "static/js/2.621f9d77.chunk.js": "/moman-raza/static/js/2.621f9d77.chunk.js",
-    "static/js/2.621f9d77.chunk.js.map": "/moman-raza/static/js/2.621f9d77.chunk.js.map",
-    "static/js/3.0a266d02.chunk.js": "/moman-raza/static/js/3.0a266d02.chunk.js",
-    "static/js/3.0a266d02.chunk.js.map": "/moman-raza/static/js/3.0a266d02.chunk.js.map",
+    "main.js": "/moman-raza/static/js/main.8782e90b.chunk.js",
+    "main.js.map": "/moman-raza/static/js/main.8782e90b.chunk.js.map",
+    "runtime-main.js": "/moman-raza/static/js/runtime-main.13d21e95.js",
+    "runtime-main.js.map": "/moman-raza/static/js/runtime-main.13d21e95.js.map",
+    "static/js/2.a30bb45b.chunk.js": "/moman-raza/static/js/2.a30bb45b.chunk.js",
+    "static/js/2.a30bb45b.chunk.js.map": "/moman-raza/static/js/2.a30bb45b.chunk.js.map",
+    "static/js/3.7c167a4c.chunk.js": "/moman-raza/static/js/3.7c167a4c.chunk.js",
+    "static/js/3.7c167a4c.chunk.js.map": "/moman-raza/static/js/3.7c167a4c.chunk.js.map",
     "index.html": "/moman-raza/index.html",
     "static/css/main.289f5cdc.chunk.css.map": "/moman-raza/static/css/main.289f5cdc.chunk.css.map",
-    "static/js/2.621f9d77.chunk.js.LICENSE.txt": "/moman-raza/static/js/2.621f9d77.chunk.js.LICENSE.txt",
+    "static/js/2.a30bb45b.chunk.js.LICENSE.txt": "/moman-raza/static/js/2.a30bb45b.chunk.js.LICENSE.txt",
     "static/media/Bodega.e7102ca4.png": "/moman-raza/static/media/Bodega.e7102ca4.png",
     "static/media/design.ff109437.jpg": "/moman-raza/static/media/design.ff109437.jpg",
     "static/media/jam.651b2373.PNG": "/moman-raza/static/media/jam.651b2373.PNG",
@@ -21,9 +21,9 @@
     "static/media/web.023cbfc2.jpg": "/moman-raza/static/media/web.023cbfc2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2512d422.js",
-    "static/js/2.621f9d77.chunk.js",
+    "static/js/runtime-main.13d21e95.js",
+    "static/js/2.a30bb45b.chunk.js",
     "static/css/main.289f5cdc.chunk.css",
-    "static/js/main.d299f2f6.chunk.js"
+    "static/js/main.8782e90b.chunk.js"
   ]
 }
