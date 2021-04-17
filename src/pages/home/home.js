@@ -12,10 +12,6 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
-import MobileStepper from "@material-ui/core/MobileStepper";
-import Paper from "@material-ui/core/Paper";
-import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
-import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { useStyles } from "./style.js";
@@ -23,12 +19,18 @@ import jam from "../../assets/images/jam.PNG";
 import Bodega from "../../assets/images/Bodega.png";
 import Sundry from "../../assets/images/sundry.PNG";
 import legal from "../../assets/images/pre-ligal.PNG";
-import mobDevelopment from "../../assets/images/mobile-development.jpg";
+import mobDevelopment from "../../assets/images/mobile.jpg";
 import testing from "../../assets/images/testing.jpg";
 import wordpress from "../../assets/images/wordpress.jpg";
-import webDevelopment from "../../assets/images/web-development.jpg";
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import webDevelopment from "../../assets/images/web.jpg";
+import CardHeader from "@material-ui/core/CardHeader";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import Box from "@material-ui/core/Box";
 
+import CheckIcon from "@material-ui/icons/Check";
 const tutorialSteps = [
   {
     label: "Website Development",
@@ -47,6 +49,9 @@ const tutorialSteps = [
     imgPath: mobDevelopment,
   },
 ];
+function ListItemLink(props) {
+  return <ListItem button component="a" {...props} />;
+}
 function Home(props) {
   const classes = useStyles(props);
   const medium = useMediaQuery("(min-width:600px)");
@@ -247,65 +252,151 @@ function Home(props) {
         </Grid>
       </Grid>
       <Grid container spacing={3} maxWidth="sm" className={classes.port}>
-        <div className={classes.root}>
-          <Paper square elevation={0} className={classes.header}>
-            <Typography variant={medium == true ? "h4" : "h6"}>
-              {tutorialSteps[activeStep].label}
-            </Typography>
-          </Paper>
-          <AutoPlaySwipeableViews
-            axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-            index={activeStep}
-            onChangeIndex={handleStepChange}
-            enableMouseEvents
+        <Grid item md={12}>
+          <Typography
+            variant={medium == true ? "h2" : "h3"}
+            align="center"
+            style={{ textAlign: "center" }}
           >
-            {tutorialSteps.map((step, index) => (
-              <div key={step.label}>
-                {Math.abs(activeStep - index) <= 2 ? (
-                  <img
-                    className={classes.img}
-                    src={step.imgPath}
-                    alt={step.label}
-                  />
-                ) : null}
+            My Services
+          </Typography>
+        </Grid>
+
+        <Grid item sm={12} md={4} xl={4}>
+          <Card className={classes.card_root}>
+            <CardHeader
+              style={{ textAlign: "center" }}
+              title="Web Development"
+            />
+            <div style={{ width: "100%", height: "400px" }}>
+              <CardMedia
+                className={classes.media}
+                image={webDevelopment}
+                title="Paella dish"
+              />
+            </div>
+            <CardContent>
+              <div className={classes.list}>
+                <List component="nav" aria-label="main mailbox folders">
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="MERN Development" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Web Designing" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Wordpress" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Wix" />
+                  </ListItem>
+                </List>
               </div>
-            ))}
-          </AutoPlaySwipeableViews>
-          <MobileStepper
-            steps={maxSteps}
-            position="static"
-            variant="text"
-            activeStep={activeStep}
-            nextButton={
-              <Button
-                size="small"
-                onClick={handleNext}
-                disabled={activeStep === maxSteps - 1}
-              >
-                Next
-                {theme.direction === "rtl" ? (
-                  <KeyboardArrowLeft />
-                ) : (
-                  <KeyboardArrowRight />
-                )}
-              </Button>
-            }
-            backButton={
-              <Button
-                size="small"
-                onClick={handleBack}
-                disabled={activeStep === 0}
-              >
-                {theme.direction === "rtl" ? (
-                  <KeyboardArrowRight />
-                ) : (
-                  <KeyboardArrowLeft />
-                )}
-                Back
-              </Button>
-            }
-          />
-        </div>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item sm={12} md={4} xl={4}>
+          <Card className={classes.card_root}>
+            <CardHeader
+              style={{ textAlign: "center" }}
+              title="Mobile Development"
+            />
+            <div style={{ width: "100%", height: "400px" }}>
+              <CardMedia
+                className={classes.media}
+                image={webDevelopment}
+                title="Paella dish"
+              />
+            </div>
+            <CardContent>
+              <div className={classes.list}>
+                <List component="nav" aria-label="main mailbox folders">
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="MERN Development" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Web Designing" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Wordpress" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Wix" />
+                  </ListItem>
+                </List>
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item sm={12} md={4} xl={4}>
+          <Card className={classes.card_root}>
+            <CardHeader
+              style={{ textAlign: "center" }}
+              title="Graphic Designing"
+            />
+            <div style={{ width: "100%", height: "400px" }}>
+              <CardMedia
+                className={classes.media}
+                image={webDevelopment}
+                title="Paella dish"
+              />
+            </div>
+            <CardContent>
+              <div className={classes.list}>
+                <List component="nav" aria-label="main mailbox folders">
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="MERN Development" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Web Designing" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Wordpress" />
+                  </ListItem>
+                  <ListItem button>
+                    <ListItemIcon>
+                      <CheckIcon color="primary" />
+                    </ListItemIcon>
+                    <ListItemText primary="Wix" />
+                  </ListItem>
+                </List>
+              </div>
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
     </>
   );

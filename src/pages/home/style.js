@@ -14,13 +14,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    minheight: 500,
+    minheight: 400,
     maxHeight: 400,
     height: "100%",
     display: "block",
     width: "100%",
-    overflow: "hidden",
-    width: "100%",
+    overflow: "fit",
   },
 
   lineHero: {
@@ -39,6 +38,28 @@ const useStyles = makeStyles((theme) => ({
   portCard: {
     transition: "transform 0.15s ease-in-out",
     transform: "scale3d(1.05, 1.05, 1)",
+  },
+  //==========================Services Card ================================//
+  card_root: {
+    maxWidth: 400,
+    minWidth: 400,
+    margin: 15,
+    height: 700,
+  },
+  media: {
+    height: "100%",
+    width: "100%",
+    paddingTop: "56.25%", // 16:9
+  },
+
+  avatar: {
+    backgroundColor: "red",
+  },
+  list: {
+    width: "100%",
+    maxWidth: 360,
+
+    backgroundColor: theme.palette.background.paper,
   },
 
   ///-----------------------------Large Screen ----------------------------//
@@ -98,6 +119,14 @@ const useStyles = makeStyles((theme) => ({
   portTextsml: {
     textAlign: "center",
     fontSize: 50,
+  },
+  // services image
+  img_sml: {
+    maxHeight: 150,
+    height: "100%",
+    display: "block",
+    width: "100%",
+    overflow: "hidden",
   },
 }));
 
