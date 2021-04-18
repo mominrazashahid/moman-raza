@@ -16,8 +16,8 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
-import { withRouter } from "react-router-dom";
 import MailIcon from '@material-ui/icons/Mail';
+import { withRouter } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -62,7 +62,11 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-
+    paddingRight:-20 ,
+    transition: theme.transitions.create('margin', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
     marginLeft: -drawerWidth,
   },
   contentShift: {
@@ -73,7 +77,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
 }));
-
 
  function Appbar(props) {
   const { children } = props;
@@ -147,12 +150,17 @@ const useStyles = makeStyles((theme) => ({
           ))}
         </List>
       </Drawer>
-      <main className={classes.content}>
-      {children}
+      <main
+        className={clsx(classes.content, {
+          [classes.contentShift]: open,
+        })}
+      >
+                <div className={classes.drawerHeader} />
 
-        
-      </main>
+{children} 
+  </main>
     </div>
   );
 }
+
 export default withRouter(Appbar);

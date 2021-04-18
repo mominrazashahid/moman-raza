@@ -8,12 +8,12 @@ export async function invokeApi({
   method = "GET",
   headers = {},
   queryParams = {},
-  postData = {}
+  postData = {},
 }) {
   let reqObj = {
     method: method,
     url: base_uri + path,
-    headers: headers
+    headers: headers,
   };
 
   reqObj["params"] = queryParams;
@@ -41,16 +41,16 @@ export async function invokeApi({
     return results.data;
   } catch (error) {
     //log error
-    console.log("<===Api-Error===>", error.response.data);
+    console.log("<===Api-Error===>", error);
 
     //handle 401 unautherized error
-    if (error.response.status === 401) {
-      localStorage.clear();
-      window.location.reload();
-    }
+    // if (error.response.status === 401) {
+    //   localStorage.clear();
+    //   window.location.reload();
+    // }
     return {
       code: error.response.status,
-      message: error.response.data.message ? error.response.data.message : ""
+      message: error.response.data.message ? error.response.data.message : "",
     };
   }
 }

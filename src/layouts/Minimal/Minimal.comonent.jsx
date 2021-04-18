@@ -7,12 +7,8 @@ const Minimal = (props) => {
   const { children } = props;
 
   return (
-    <div className="main-bg">
-      <Header />
-      <div className="wrapper">
-        <main className="w-100">{children}</main>
-      </div>
-    </div>
+   
+        <main >{children}</main>
   );
 };
 

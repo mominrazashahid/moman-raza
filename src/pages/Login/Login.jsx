@@ -11,8 +11,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Alert from "@material-ui/lab/Alert";
 import { useSnackbar } from "notistack";
-import { AdminLogin } from "../../DAL/login/login";
 import { color_palette } from "../../theme/theme";
+
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -69,14 +69,15 @@ export default function SignIn(props) {
       time_zone: "karachi",
       type: 1
     };
-    const response = await AdminLogin(data);
-    console.log(response, "response");
-    if (response.code !== 200) {
-      enqueueSnackbar(response.message, { variant: "error" });
-    } else {
-      localStorage.setItem("token", response.admin.token);
-      props.history.push("/dashboard");
-    }
+    // const response = await AdminLogin(data);
+    // console.log(response, "response");
+    // if (response.code !== 200) {
+    //   enqueueSnackbar(response.message, { variant: "error" });
+    // } else {
+    //   localStorage.setItem("token", response.admin.token);
+    //   props.history.push("/dashboard");
+    // }
+    props.history.push("/dashboard");
   };
 
   return (

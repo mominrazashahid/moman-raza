@@ -1,5 +1,5 @@
 export const color_palette = {
-  primary: "#1565c0",
+  primary: "#041b35",
   secondary: "#FAFAFA",
   // primary: "#181E45",
   // secondary: "#22787E",

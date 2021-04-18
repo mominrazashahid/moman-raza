@@ -1,61 +1,10 @@
 import { invokeApi } from "../../bl_libs/invokeApi";
 
-export const FetchDeciplineList = () => {
+export const FetchFeedsList = async () => {
   let requestObj = {
-    path: "/api/discipline/list_discipline",
+    path:
+      "https://graph.instagram.com/creative.website?fields=id,username&access_token=IGQVJWSmx2X09fRVBwbE9DZAHNJQW5pODBIZA3UtT2tVcHJnRDFFSGJXN2xsUG1DTUI3SEJZAaHdydl91b09JeEI1ZAjRQenkwY2p0d0ZAJcThfQlMzSWlMVXcyWEpLdzRKNUNYdk1oYk1PMlhjN3ZAIMEpLSQZDZD",
     method: "GET",
-    headers: {
-      "x-sh-auth": localStorage.getItem("token")
-    }
   };
-  return invokeApi(requestObj);
-};
-
-export const AddDecipline = data => {
-  let requestObj = {
-    path: "/api/discipline/add_discipline",
-    method: "POST",
-    headers: {
-      "x-sh-auth": localStorage.getItem("token")
-    }
-  };
-
-  requestObj["postData"] = data;
-
-  return invokeApi(requestObj);
-};
-
-export const EditDecipline = (data, id) => {
-  let requestObj = {
-    path: `/api/discipline/edit_discipline/${id}`,
-    method: "PUT",
-    headers: {
-      "x-sh-auth": localStorage.getItem("token")
-    }
-  };
-  requestObj["postData"] = data;
-
-  return invokeApi(requestObj);
-};
-
-export const DeleteDecipline = id => {
-  let requestObj = {
-    path: `/api/discipline/delete_discipline/${id}`,
-    method: "DELETE",
-    headers: {
-      "x-sh-auth": localStorage.getItem("token")
-    }
-  };
-  return invokeApi(requestObj);
-};
-
-export const DetailDecipline = id => {
-  let requestObj = {
-    path: `/api/discipline/detail_discipline/${id}`,
-    method: "GET",
-    headers: {
-      "x-sh-auth": localStorage.getItem("token")
-    }
-  };
-  return invokeApi(requestObj);
+  return await invokeApi(requestObj);
 };

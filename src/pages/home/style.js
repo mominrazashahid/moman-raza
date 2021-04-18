@@ -2,6 +2,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   // image slide our services
+
   root: {
     Width: "100%",
     flexGrow: 1,
@@ -22,28 +23,23 @@ const useStyles = makeStyles((theme) => ({
     overflow: "fit",
   },
 
-  lineHero: {
-    backgroundColor: "#011327",
-    color: "white",
-    minHeight: "600px",
-  },
-  portText: {
-    textAlign: "center",
-    margin: 20,
-    paddingTop: 30,
-  },
   port: {
-    padding: 30,
+    paddingLeft: 0,
   },
-  portCard: {
-    transition: "transform 0.15s ease-in-out",
-    transform: "scale3d(1.05, 1.05, 1)",
+  insta_port: {
+    padding: 0,
+    marginLeft: 0,
   },
+  port_card: {
+    maxWidth: 600,
+    minWidth: 400,
+    maxheight: 600,
+  },
+
   //==========================Services Card ================================//
   card_root: {
     maxWidth: 400,
     minWidth: 400,
-    margin: 15,
     height: 700,
   },
   media: {
@@ -63,10 +59,23 @@ const useStyles = makeStyles((theme) => ({
   },
 
   ///-----------------------------Large Screen ----------------------------//
+  hero: {
+    backgroundImage: "linear-gradient(to left, #011327  0% , #499eff )",
+    color: "white",
+    minHeight: 500,
+  },
+  container: {
+    backgroundColor: "#011327",
+    color: "white",
+    minHeight: "600px",
+    padding: 70,
+  },
+  lottie: {
+    marginTop: 10,
+  },
   textBack: {
     width: "80%",
-    marginLeft: "50px",
-    marginTop: 130,
+    marginTop: 10,
     height: "auto",
   },
   name: {
@@ -77,8 +86,8 @@ const useStyles = makeStyles((theme) => ({
   },
   textBackSlogan: {
     width: "80%",
-    marginTop: 50,
-    marginLeft: "20%",
+    marginTop: 10,
+    marginLeft: "5%",
     height: 30,
   },
   slogan: {
@@ -89,10 +98,20 @@ const useStyles = makeStyles((theme) => ({
   },
 
   ///-----------------------------Small Screen ----------------------------//
-
+  hero_sml: {
+    backgroundImage: "linear-gradient(to left, #011327  0% , #499eff )",
+    color: "white",
+    minHeight: 650,
+  },
+  container_sml: {
+    backgroundColor: "#011327",
+    color: "white",
+    minHeight: "600px",
+    padding: 20,
+  },
   textBacksml: {
     width: "100%",
-    marginTop: 100,
+    marginTop: 0,
     height: 15,
   },
 
